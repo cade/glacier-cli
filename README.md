@@ -10,6 +10,14 @@ Install it:
 
 ## Usage
 
+Prerequisites:
+
+You'll need to set the following three things in environment variables:
+
+    ENV['AWS_REGION']
+    ENV['AWS_ACCESS_KEY']
+    ENV['AWS_SECRET_ACCESS_KEY']
+
 Basic usage:
 
     $ glacier -v my_vault -d path/to/files
