@@ -71,11 +71,11 @@ module Glacier
           @vault_name = arg
         end
 
-        o.on '-f', '--file [FILE_NAME]', 'Name of file to store' do |arg|
+        o.on '-f', '--file [FILE_NAME]', 'Path of file to store' do |arg|
           @files << arg
         end
 
-        o.on '-d', '--directory [DIRECTORY_NAME]', 'Name of file to store' do |arg|
+        o.on '-d', '--directory [DIRECTORY_NAME]', 'Path of directory to recursively store' do |arg|
           @directories << arg
         end
 
