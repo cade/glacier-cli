@@ -5,10 +5,6 @@ require 'set'
 require_relative "./cli/version"
 
 module Glacier
-  def self.env
-    ENV['GLACIER_CLI_ENV'] || 'development'
-  end
-
   class CLI
     CHUNK_SIZE = 1024 * 1024 * 8 # 8 MB
     LOCAL_STORE = "#{ENV['HOME']}/.glacier"
